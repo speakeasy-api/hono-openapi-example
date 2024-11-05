@@ -24,13 +24,13 @@ Install the application on your local machine.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/speakeasy-api/speakeasy-hono-example.git
+    git clone https://github.com/speakeasy-api/hono-openapi-example.git
     ```
 
 2. Navigate into the directory:
 
     ```bash
-    cd speakeasy-hono-example
+    cd hono-openapi-example
     ```
 
 3. Install all dependencies for the application using NPM:
