@@ -30,7 +30,7 @@ Install the application on your local machine.
 2. Navigate into the directory:
 
     ```bash
-    cd speakeasy-hono-example
+    cd hono-openapi-example
     ```
 
 3. Install all dependencies for the application using NPM:
