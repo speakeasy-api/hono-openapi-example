@@ -1,8 +1,8 @@
 import type { OpenAPIHono } from '@hono/zod-openapi';
 
-import { swaggerUI } from '@hono/swagger-ui';
-
 import packageJson from '../../package.json';
+
+import { apiReference } from '@scalar/hono-api-reference'
 
 export const openAPIObjectConfig = {
   'openapi': '3.1.0',
@@ -43,5 +43,12 @@ export const openAPIObjectConfig = {
 
 export default function configureOpenAPI(app: OpenAPIHono) {
   app.doc31('/doc', openAPIObjectConfig);
-  app.get('/ui', swaggerUI({ url: '/doc' }));
+  app.get(
+    '/ui',
+    apiReference({
+      spec: {
+        url: '/doc',
+      },
+    }),
+  )
 }
