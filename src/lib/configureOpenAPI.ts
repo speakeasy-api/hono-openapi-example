@@ -49,6 +49,7 @@ export default function configureOpenAPI(app: OpenAPIHono) {
       spec: {
         url: '/doc',
       },
+      pageTitle: 'Users Management API',
     }),
   )
 }
