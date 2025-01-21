@@ -2,13 +2,11 @@ import { createRoute, z } from '@hono/zod-openapi';
 
 import { createErrorSchema, createMessageObjectSchema, idParamsSchema, patchUserSchema, UserInsertSchema, UserSelectSchema } from '@/schemas';
 
-const tags = ['Users'];
-
 export const list = createRoute({
   'operationId': 'getUsers',
   'path': '/users',
   'method': 'get',
-  tags,
+  'tags': ['Users'],
   'x-speakeasy-retries': {
     strategy: 'backoff',
     backoff: {
@@ -47,7 +45,6 @@ export const create = createRoute({
       required: true,
     },
   },
-  // tags,
   responses: {
     200: {
       content: {
@@ -83,7 +80,6 @@ export const getOne = createRoute({
   request: {
     params: idParamsSchema,
   },
-  // tags,
   responses: {
     200: {
       content: {

@@ -1,8 +1,8 @@
 import type { OpenAPIHono } from '@hono/zod-openapi';
 
-import packageJson from '../../package.json';
+import { apiReference } from '@scalar/hono-api-reference';
 
-import { apiReference } from '@scalar/hono-api-reference'
+import packageJson from '../../package.json';
 
 export const openAPIObjectConfig = {
   'openapi': '3.1.0',
@@ -27,14 +27,7 @@ export const openAPIObjectConfig = {
     statusCodes: ['5XX'],
     retryConnectionErrors: true,
   },
-  'tags': [{
-    name: 'Users',
-    description: 'Users operations',
-    externalDocs: {
-      description: 'Find more info here',
-      url: 'https://example.com',
-    },
-  }],
+
   'info': {
     version: packageJson.version,
     title: 'Users API',
@@ -51,5 +44,5 @@ export default function configureOpenAPI(app: OpenAPIHono) {
       },
       pageTitle: 'Users Management API',
     }),
-  )
+  );
 }
