@@ -27,7 +27,14 @@ export const openAPIObjectConfig = {
     statusCodes: ['5XX'],
     retryConnectionErrors: true,
   },
-
+  'tags': [{
+    name: 'Users',
+    description: 'Users operations',
+    externalDocs: {
+      description: 'Find more info here',
+      url: 'https://example.com',
+    },
+  }],
   'info': {
     version: packageJson.version,
     title: 'Users API',
