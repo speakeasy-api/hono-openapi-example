@@ -24,7 +24,7 @@ This project was bootstrapped with the [Hono Node.js starter template](https://h
 
 ## Prerequisites
 
-You need to have [Node.js version >= 18](https://nodejs.org/) installed on your system to run this project.
+You need to have [Node.js version 18+](https://nodejs.org/) installed on your system to run this project.
 
 To generate an SDK, you'll also need to [install the Speakeasy CLI](https://github.com/speakeasy-api/speakeasy#installation) or use the Speakeasy dashboard.
 
@@ -32,25 +32,25 @@ To generate an SDK, you'll also need to [install the Speakeasy CLI](https://gith
 
 Install the application on your local machine.
 
-1. Clone the repository:
+- Clone the repository:
 
     ```bash
     git clone https://github.com/speakeasy-api/hono-openapi-example.git
     ```
 
-2. Navigate into the directory:
+- Navigate into the directory:
 
     ```bash
     cd hono-openapi-example
     ```
 
-3. Install all the dependencies for the application using npm:
+- Install all the dependencies for the application using npm:
 
     ```bash
     npm install
     ```
 
-4. Install the Speakeasy CLI:
+- Install the Speakeasy CLI:
 
     ```bash
     brew install speakeasy-api/homebrew-tap/speakeasy
