@@ -8,8 +8,6 @@
 </div>
 <hr />
 
-<h2>Speakeasy Hono OpenAPI example</h2>
-
 This example Hono app demonstrates the Speakeasy-recommended practices for creating clear OpenAPI documents and SDKs.
 
 This project was bootstrapped with the [Hono Node.js starter template](https://hono.dev/docs/getting-started/basic#starter) and has three example API endpoints in `src/routes/users/users.index.ts` to get all users, get a user by id, and create a user.
