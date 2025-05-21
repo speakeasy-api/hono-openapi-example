@@ -1,9 +1,7 @@
 # dev
 .yarn/
 !.yarn/releases
-.vscode/*
-!.vscode/launch.json
-!.vscode/*.code-snippets
+.vscode
 .idea/workspace.xml
 .idea/usage.statistics.xml
 .idea/shelf

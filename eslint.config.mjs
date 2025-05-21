@@ -19,4 +19,12 @@ export default antfu({
       internalPattern: ['@/**'],
     }],
   },
+    overrides: [
+    {
+      files: ['*.md'],
+      rules: {
+        'format/prettier': 'off',
+      },
+    },
+  ],
 });

@@ -1,16 +1,16 @@
-import type { StatusCode } from 'hono/utils/http-status';
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
 
-import { OpenAPIHono } from '@hono/zod-openapi';
 import { config } from 'dotenv';
+import { Hono } from 'hono';
 
 config();
 
 export function createRouter() {
-  return new OpenAPIHono({ strict: false });
+  return new Hono({ strict: false });
 }
 
 export default function createApp() {
-  const app = new OpenAPIHono({ strict: false });
+  const app = new Hono({ strict: false });
 
   app.notFound((c) => {
     return c.json({
@@ -23,7 +23,7 @@ export default function createApp() {
       ? err.status
       : c.newResponse(null).status;
     const statusCode = currentStatus !== 'OK'
-      ? (currentStatus as StatusCode)
+      ? (currentStatus as ContentfulStatusCode)
       : 500;
 
     const env = process.env.NODE_ENV;
