@@ -1,4 +1,4 @@
-import type { ContentfulStatusCode, StatusCode } from 'hono/utils/http-status';
+import type { ContentfulStatusCode } from 'hono/utils/http-status';
 
 import { config } from 'dotenv';
 import { Hono } from 'hono';

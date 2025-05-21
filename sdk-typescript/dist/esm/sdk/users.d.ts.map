@@ -1,0 +1,1 @@
+{"version":3,"file":"users.d.ts","sourceRoot":"","sources":["../../../src/sdk/users.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,SAAS,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAC;AAC3D,OAAO,KAAK,MAAM,MAAM,oBAAoB,CAAC;AAG7C,qBAAa,KAAM,SAAQ,SAAS;IAC5B,QAAQ,CACZ,OAAO,CAAC,EAAE,cAAc,GACvB,OAAO,CAAC,KAAK,CAAC,MAAM,CAAC,UAAU,CAAC,CAAC;CAMrC"}
