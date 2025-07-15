@@ -1,6 +1,6 @@
 # sdk
 
-Developer-friendly & type-safe Typescript SDK specifically catered to leverage *sdk* API.
+Developer-friendly & type-safe TypeScript SDK specifically catered to leverage *sdk* API.
 
 <div align="left">
     <a href="https://www.speakeasy.com/?utm_source=sdk&utm_campaign=typescript"><img src="https://custom-icon-badges.demolab.com/badge/-Built%20By%20Speakeasy-212015?style=for-the-badge&logoColor=FBE331&logo=speakeasy&labelColor=545454" /></a>
