@@ -87,7 +87,7 @@ export interface AfterErrorHook {
 export interface Hooks {
   /** Registers a hook to be used by the SDK for initialization event. */
   registerSDKInitHook(hook: SDKInitHook): void;
-  /** Registers a hook to be used by the SDK for to modify `Request` construction. */
+  /** Registers a hook to be used by the SDK to modify `Request` construction. */
   registerBeforeCreateRequestHook(hook: BeforeCreateRequestHook): void;
   /** Registers a hook to be used by the SDK for the before request event. */
   registerBeforeRequestHook(hook: BeforeRequestHook): void;
