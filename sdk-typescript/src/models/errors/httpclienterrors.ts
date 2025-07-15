@@ -25,7 +25,7 @@ export class HTTPClientError extends Error {
 }
 
 /**
- * An error to capture unrecognised or unexpected errors when making HTTP calls.
+ * An error to capture unrecognized or unexpected errors when making HTTP calls.
  */
 export class UnexpectedClientError extends HTTPClientError {
   override name = "UnexpectedClientError";

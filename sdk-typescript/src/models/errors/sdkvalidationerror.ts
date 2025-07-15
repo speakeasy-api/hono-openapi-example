@@ -25,7 +25,7 @@ export class SDKValidationError extends Error {
 
   /**
    * Return a pretty-formatted error message if the underlying validation error
-   * is a ZodError or some other recognized error type, otherwise return the
+   * is a ZodError or some other recognized error type; otherwise, return the
    * default error message.
    */
   public pretty(): string {
@@ -79,7 +79,7 @@ export function formatZodError(err: z.ZodError, level = 0): string {
       case "invalid_union": {
         const len = issue.unionErrors.length;
         append(
-          `│   ✖︎ Attemped to deserialize into one of ${len} union members:`,
+          `│   ✖︎ Attempted to deserialize into one of ${len} union members:`,
         );
         issue.unionErrors.forEach((err, i) => {
           append(`│   ✖︎ Member ${i + 1} of ${len}`);

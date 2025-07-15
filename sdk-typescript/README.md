@@ -1,6 +1,6 @@
 # sdk
 
-Developer-friendly & type-safe Typescript SDK specifically catered to leverage *sdk* API.
+Developer-friendly & type-safe TypeScript SDK specifically catered to leverage *sdk* API.
 
 <div align="left">
     <a href="https://www.speakeasy.com/?utm_source=sdk&utm_campaign=typescript"><img src="https://custom-icon-badges.demolab.com/badge/-Built%20By%20Speakeasy-212015?style=for-the-badge&logoColor=FBE331&logo=speakeasy&labelColor=545454" /></a>
@@ -220,7 +220,7 @@ If a HTTP request fails, an operation my also throw an error from the `models/er
 | RequestTimeoutError                                  | HTTP request timed out due to an AbortSignal signal  |
 | ConnectionError                                      | HTTP client was unable to make a request to a server |
 | InvalidRequestError                                  | Any input used to create a request is invalid        |
-| UnexpectedClientError                                | Unrecognised or unexpected error                     |
+| UnexpectedClientError                                | Unrecognized or unexpected error                     |
 
 In addition, when custom error responses are specified for an operation, the SDK may throw their associated Error type. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation. For example, the `createUser` method may throw the following errors:
 
