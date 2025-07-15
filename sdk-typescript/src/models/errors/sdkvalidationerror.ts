@@ -25,7 +25,7 @@ export class SDKValidationError extends Error {
 
   /**
    * Return a pretty-formatted error message if the underlying validation error
-   * is a ZodError or some other recognized error type, otherwise return the
+   * is a ZodError or some other recognized error type; otherwise, return the
    * default error message.
    */
   public pretty(): string {
