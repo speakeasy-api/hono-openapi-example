@@ -13,7 +13,7 @@ impact on the application's final bundle size which grows very slowly as you use
 more and more functionality from this SDK.
 
 Calling methods through the main SDK class remains a valid and generally more
-more ergonomic option. Standalone functions represent an optimisation for a
+more ergonomic option. Standalone functions represent an optimization for a
 specific category of applications.
 
 ## Example
